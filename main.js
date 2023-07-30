@@ -7,4 +7,10 @@ submit.addEventListener("mouseover", function () {
 
 submit.addEventListener("mouseout", function () {
   hintContent.style.visibility = "hidden";
+  // or:
+  setTimeout(function() {
+    if (!isMouseOver)
+    hintContent.style.visibility = 'hidden';
+    }, timeout);
+  
 });
